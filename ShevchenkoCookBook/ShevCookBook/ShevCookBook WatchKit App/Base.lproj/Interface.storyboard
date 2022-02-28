@@ -30,7 +30,7 @@
                     <items>
                         <table alignment="left" id="csn-Kj-gzS">
                             <items>
-                                <tableRow id="tua-TG-K1k">
+                                <tableRow identifier="tableRow" id="tua-TG-K1k" customClass="RowTable">
                                     <group key="rootItem" width="1" alignment="left" id="n0k-ix-r9p">
                                         <items>
                                             <imageView width="30" height="30" alignment="left" verticalAlignment="center" image="swift" catalog="system" id="Dtp-CA-Gax">
@@ -39,13 +39,35 @@
                                             <label alignment="left" verticalAlignment="center" text="RecName" id="FIQ-oh-oPF"/>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <outlet property="rowPicture" destination="Dtp-CA-Gax" id="1ln-On-Nn7"/>
+                                        <outlet property="rowRecipeName" destination="FIQ-oh-oPF" id="vB7-UA-GmF"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="table" destination="csn-Kj-gzS" id="jK3-Hk-gqg"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="204" y="62"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="1aN-2T-8yU">
+            <objects>
+                <controller id="drs-vx-dfD">
+                    <items>
+                        <group width="1" alignment="left" id="tUb-j1-MMv">
+                            <items>
+                                <label width="100" height="100" alignment="left" text="Label" id="Okr-gp-9aZ"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="408" y="61"/>
         </scene>
     </scenes>
     <resources>
