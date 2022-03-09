@@ -23,6 +23,10 @@ class TableRecipesIC: WKInterfaceController {
         }
     }
     
+    override func contextForSegue(withIdentifier segueIdentifier: String, in table: WKInterfaceTable, rowIndex: Int) -> Any? {
+        return Recipes.getRecipe()[rowIndex]
+    }
+    
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
     }
